@@ -18,7 +18,7 @@ from create_mentoring import create_post
 def load_students():
     with open('students.json', 'r', encoding='utf-8') as f:
         student_list = json.load(f)
-    # 이름으로 찾기 쉽게 딕셔너리로 변환 ({"정서아": {"first_name": "서아", "nickname": "토리1004"}, ...})
+    # 이름으로 찾기 쉽게 딕셔너리로 변환 
     return {s['name']: s for s in student_list}
 
 
