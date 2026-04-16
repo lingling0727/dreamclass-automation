@@ -29,12 +29,12 @@ def load_schedule():
         reader = csv.DictReader(f)
         for row in reader:
             schedules.append({
-                'name': row['이름'].strip(),
-                'month': int(row['월']),
-                'session': int(row['회차']),
-                'day': int(row['일']),
-                'start_h': int(row['시작시']),
-                'start_m': int(row['시작분']),
+                'name': row['name'].strip(),
+                'month': int(row['month']),
+                'session': int(row['session']),
+                'day': int(row['day']),
+                'start_h': int(row['start_h']),
+                'start_m': int(row['start_m']),
             })
     return schedules
 
