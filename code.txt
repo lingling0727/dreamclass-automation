@@ -1,0 +1,8 @@
+# 파이썬 확인
+python3 --version
+
+# 폴더 이동
+cd documents/dreamclass-automation
+
+# 권한 부여
+chmod +x run.command
